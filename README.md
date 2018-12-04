@@ -1,5 +1,6 @@
 # E98-autograder
-Author: Paul Shao
+#### Author: Paul Shao
+
 To use, run `unit_test.rb`, it will invoke unit test and interactive test instances on different methods.
 
 Demo:
