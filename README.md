@@ -15,9 +15,12 @@ ________________________________________________________________________________
 
 **Unit Test for Static (One-time Input and Output) Methods**
 
+**Primary Testing Method: `assert_equal`**
 `add.rb`
 
 **Interactive Test**
+
+**Primary Testing Method: `Interactive.test_match`**
 
 `greet.rb`
 `angry_grandma.rb`
