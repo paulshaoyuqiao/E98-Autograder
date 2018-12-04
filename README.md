@@ -1,7 +1,7 @@
 # E98-autograder
 #### Author: Paul Shao
 
-To use, run `unit_test.rb`, it will invoke both the **static unit test and interactive test instances** on different methods.
+To use, run `test_assignments.rb`, it will invoke both the **static unit test and interactive test instances** on different methods.
 ______________________________________________________________________________________________________________________________
 ### Current Testing Parameters/Functionalities Supported:
 
