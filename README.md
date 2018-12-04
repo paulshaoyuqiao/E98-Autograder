@@ -23,7 +23,10 @@ ________________________________________________________________________________
 `angry_grandma.rb`
 
 ### How it works for Interactive Test
-It takes in the students' program, a given input in textfile, an empty textfile to store outputs by the program, and an expected
-output in textfile. It will run the program with the test input in the textfile, redirect the output stream to the empty textfile,
-and in the end, compare that against the expected output line by line. 
+It takes in the following 4 files, 
+1. `students_program.rb`
+2. `test_input.txt`
+3. `test_output.txt`
+4. `expected_output.txt`
+Then, the interactive class will run the program with the test input in the textfile, redirect the output stream to the empty textfile, and in the end, compare that against the expected output line by line. 
 
