@@ -1,6 +1,6 @@
 require 'test/unit'
 require './static_methods_demo/add'
-require './interactive_test'
+require './Interactive'
 
 # general case for unit testing purposes
 class HW1Test < Test::Unit::TestCase
