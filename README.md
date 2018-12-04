@@ -2,8 +2,9 @@
 #### Author: Paul Shao
 
 To use, run `unit_test.rb`, it will invoke unit test and interactive test instances on different methods.
+______________________________________________________________________________________________________________________________
+### Demos:
 
-Demo:
 **Unit Test for Static (One-time Input and Output) Methods**
 
 `add.rb`
