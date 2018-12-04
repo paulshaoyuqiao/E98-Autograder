@@ -5,11 +5,13 @@ To use, run `unit_test.rb`, it will invoke unit test and interactive test instan
 
 Demo:
 **Unit Test for Static (One-time Input and Output) Methods**
-add.rb
+
+`add.rb`
 
 **Interactive Test**
-greet.rb
-angry_grandma.rb
+
+`greet.rb`
+`angry_grandma.rb`
 
 ### How it works for Interactive Test
 It takes in the students' program, a given input in textfile, an empty textfile to store outputs by the program, and an expected
