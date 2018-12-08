@@ -1,4 +1,4 @@
-# Automated Scripts to Fetch and Test Against All Specified Students' Repositories 
+# Automated Scripts to Fetch and Test Against All Specified Students' Repositories
 # for an Assignment and Output The Results to a CSV file.
 
 # AUTHOR: Paul Shao
@@ -12,7 +12,7 @@ SEARCH_PATH = "./{}/{}"
 
 def normalize_score(passed, failed, total):
     '''
-    Given the number of passed and failed test cases for a specifc 
+    Given the number of passed and failed test cases for a specifc
     method, return the normalized scores for this method.
     @param passed -> the number of passed test cases.
     @param failed -> the number of failed test cases.
@@ -20,6 +20,7 @@ def normalize_score(passed, failed, total):
     @return a normalized score.
     '''
     return passed / (passed + failed) * total
+
 
 def fetch_from_github(usernames, assignment, files):
     '''
@@ -29,7 +30,7 @@ def fetch_from_github(usernames, assignment, files):
     @param usernames -> a list of usernames (to be used as baseURL)
     @param assignment -> the assignment title (to search for the code file)
     @param files -> a list of the names of all files to test the scripts on
-    @return a CSV file containing all the students' names assoicated with 
+    @return a CSV file containing all the students' names assoicated with
     their scores on this particular assignment.
     '''
     scores = {}
