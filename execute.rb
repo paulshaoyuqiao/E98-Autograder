@@ -1,6 +1,9 @@
 # Helper class created to run all the given tests per method.
 # @return (in the form of stdout) 
-# per line: the name of the test, 
+# per line: the name of the test, the number of passed test cases, the number of failed test cases
+
+#AUTHOR: Paul Shao
+
 class Exec
   @@test_method = ["test_add", "test_subtract"]
   def self.run_all_test
