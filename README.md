@@ -4,7 +4,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________
 ## Most Recent Update on Dec 16th, 2018 - 6:33PM PST - Rev C
 Newest Changes:
-* Replaced `git clone` with `svn export` to expedite git fetching process (now only concerns with the target subdirectory).
+* Replaced `git clone` with `svn export` to expedite git fetching process (now directly fetches the target subdirectory).
 * Fixed one error in testing a method with multiple correct answers.
 
 #### Author: Paul Shao
