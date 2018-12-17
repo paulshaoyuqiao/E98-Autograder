@@ -1,4 +1,7 @@
 # E98-autograder
+______________________________________________________________________________________________________________________________
+<span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
+______________________________________________________________________________________________________________________________
 ## Most Recent Update on Dec 16th, 2018 - 6:33PM PST - Rev C
 Newest Changes:
 * Replaced `git clone` with `svn export` to expedite git fetching process (now only concerns with the target subdirectory).
