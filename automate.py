@@ -44,11 +44,6 @@ def fetch_from_github(usernames, week, chapters, files):
         repository_url = PARTIAL_CLONE.format(username, week)
         os.system(repository_url)
         print('fetch success!')
-        for c in chapters:
-            for f in files:
-                exists = os.path.isfile(SEARCH_PATH.format(week, c, f))
-                if not exists:
-                    raise FileNotFoundError("The required code file {} cannot be found.".format(f))
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
         p = os.popen(cmd)
         s = p.read().strip()

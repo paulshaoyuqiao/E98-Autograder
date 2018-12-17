@@ -1,1 +1,2 @@
-Oh no, I forgot to account for leap years! I think there are 5256000 minutes in a decade
+Two leap year decade: 5258880
+Three leap year decade: 5260320

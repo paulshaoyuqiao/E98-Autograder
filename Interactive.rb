@@ -40,7 +40,7 @@ class Interactive
                         return false
                     end
                 else
-                    if actual_number.sort != expected_number.sort
+                    if not (expected_number & actual_number).any?
                         return false
                     end
                 end
