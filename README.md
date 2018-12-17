@@ -29,7 +29,7 @@ ________________________________________________________________________________
 ### Alternative Usages (for unit testing/debugging purposes ONLY)
 #### Again, please discuss with me before using the autograder this way.
 
-To allow for unit testing of specific methods locally, run `test_assignments.rb`, it will invoke both the **static unit test and interactive test instances** on different methods.
+To allow for unit testing of specific methods locally, run `test_assignments_demo.rb`, it will invoke both the **static unit test and interactive test instances** on different methods.
 ______________________________________________________________________________________________________________________________
 ### Current Testing Parameters/Functionalities Supported:
 
