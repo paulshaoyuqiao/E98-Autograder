@@ -1,5 +1,9 @@
 # E98-autograder
 ## Most Recent Update on Dec 16th, 2018 - 6:33PM PST - Rev C
+Newest Changes:
+* Replaced `git clone` with `svn export` to expedite git fetching process (now only concerns with the target subdirectory).
+* Fixed one error in testing a method with multiple correct answers.
+
 #### Author: Paul Shao
 
 ### Usages:
@@ -20,9 +24,9 @@ The streamlined version of the autograder is run through the CLI directly. Follo
    2. `week` is a string indicating the current week of the assignment (e.x. `week1`).
    3. `chapters` is a list of the chapters this assignment contains (e.x. `['ch02', 'ch05']`).
    4. `files` is a list of the files the autograder will test (e.x. `['age_in_seconds.rb', 'hours_in_year.rb']`).
-5. Fill in all 4 parameters, and hit `Enter` to execute the scripts, you should see statements such as `fetch success` during the entire process.
+5. Determine the values of all 4 parameters, assign them to variables, and execute the `fetch_from_github` with the paramters, you should see statements such as `fetch success!` during the entire process.
 6. In the end, a `csv` file containing all the students' scores will be generated in the main directory of this Python script:
-   1. The `csv` file contains 4 columns: `Github username`, `Week`, `Tested Method`, and `Score`. 
+   1. The `csv` file contains 4 columns: `Github username`, `Week`, `Tested Method`, and `Score`.
    2. `Score` is generated on a scale of 2 per method (it is computed by normalizing the total number of passed test cases).
 
 ______________________________________________________________________________________________________________________________
