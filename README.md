@@ -10,7 +10,7 @@ The autograder can be used in the following 2 ways:
 ______________________________________________________________________________________________________________________________
 **To all course staff**: Please run the tests to generate the scores **directly through `automate.py`**. Feel free to consult me **first** if you are confused about the process or want to test individual methods.
 ______________________________________________________________________________________________________________________________
-### Primary Procedures (this should be how you use the autograder):
+### Primary Procedures (Please use the autograder this way :) ):
 The streamlined version of the autograder is run through the CLI directly. Follow the steps below to generate scores for your students for this week's assignments:
 1. `git clone` this repository. (If cloned already, `git pull` to check for test-cases updates).
 2. `cd` into this repository and enter the command `python -i automate.py`.
