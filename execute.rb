@@ -1,8 +1,7 @@
-# Helper class created to run all the given tests per method.
-# @return (in the form of stdout) 
-# per line: the name of the test, 
+# Helper class created to run all the given tests per method. @return (in the
+# form of stdout)  per line: the name of the test,
 class Exec
-  @@test_method = ["test_add", "test_subtract"]
+  @@test_method = ["test_age_in_seconds", "test_author_age", "test_hours_in_year", "test_minutes_in_decade"]
   def self.run_all_test
     @@test_method.each { |method|
         test_output = `ruby week1_test.rb -n #{method} --runner console --verbose=progress`
