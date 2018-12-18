@@ -6,7 +6,7 @@
 import os
 import pandas as pd
 
-PARTIAL_CLONE = "svn export --force https://github.com/{}/ics_bc_s18/trunk/{}"
+PARTIAL_CLONE = "svn export --force https://github.com/{}/w18_icsbc/trunk/{}"
 BASE_URL = "git clone https://github.com/{}/ics_bc_s18.git"
 REMOVE_CMD = "rm -rf {}"
 SEARCH_PATH = "./{}/{}/{}"
