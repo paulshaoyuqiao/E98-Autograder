@@ -6,6 +6,9 @@
 import os
 import pandas as pd
 
+PARTIAL_CLONE_PREV = "svn export --force https://github.com/{}/ics_bc_s18/trunk/{}"
+# The link above was only used for testing purposes (fetching files from previous semester offerings).
+
 PARTIAL_CLONE = "svn export --force https://github.com/{}/w18_icsbc/trunk/{}"
 BASE_URL = "git clone https://github.com/{}/ics_bc_s18.git"
 REMOVE_CMD = "rm -rf {}"

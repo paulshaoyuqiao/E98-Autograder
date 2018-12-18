@@ -1,0 +1,4 @@
+What's your first name?
+What's your middle name?
+What's your last name?
+Hello, ICS Winter BootCamp Winter 2018! It's very nice to meet you!
