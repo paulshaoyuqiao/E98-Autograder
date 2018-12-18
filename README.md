@@ -2,10 +2,13 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 16th, 2018 - 6:33PM PST - Rev C
+## Most Recent Update on Dec 17th, 2018 - 5:47PM PST - Rev D
 Newest Changes:
-* Replaced `git clone` with `svn export` to expedite git fetching process (now directly fetches the target subdirectory).
-* Fixed one error in testing a method with multiple correct answers.
+* Updated partial clone link to reflect Winter 2018 offering
+* Updated Interactive Class:
+  * When scanning lines for numeric comparison, only lines that contain **numbers** will be considered.
+  * When scanning lines for string comparison, only lines **whose indices are included in the target array** will be considered.
+* Added Initial Tests for Chapter 5 assignments.
 
 #### Author: Paul Shao
 
