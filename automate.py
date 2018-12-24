@@ -44,7 +44,7 @@ def fetch_from_github(usernames, week, chapters, files):
     scores['Tested Method'] = []
     scores['Score'] = []
     for username in usernames:
-        repository_url = PARTIAL_CLONE_PREV.format(username, week)
+        repository_url = PARTIAL_CLONE.format(username, week)
         os.system(repository_url)
         print('fetch success!')
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
