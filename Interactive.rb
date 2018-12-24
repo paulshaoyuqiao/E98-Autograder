@@ -60,6 +60,55 @@ class Interactive
         return true
     end
 
+    def self.test_partial_str_match(test_file, inp, oup, time_limit)
+        cmd = "ruby #{test_file} < #{inp} > #{oup}"
+        begin
+            output = Timeout::timeout(time_limit) do
+                system(cmd)
+            end
+            input = File.readlines(inp).each
+            target = input.next.strip.upcase
+            actual = File.readlines(oup).each
+            i = 0
+            while i < actual.size
+                i += 1
+                curr_actual = actual.next.strip
+                if curr_actual.include?(target)
+                    return true
+                end
+            end
+            rescue Timeout::Error
+            return false
+        end
+        return false
+    end
+
+    def self.test_text_align(test_file, oup, expected_oup)
+        cmd = "ruby #{test_file} > #{oup}"
+        system(cmd)
+        actual = File.readlines(oup).each
+        expected = File.readlines(expected_oup).each
+        adjustment = actual.next.size
+        i = 1
+        while i < actual.size - 9
+            i += 1
+            curr_actual = actual.next
+        end
+        while i < actual.size
+            i += 1
+            curr_actual = actual.next
+            if curr_actual.size != adjustment
+                return false
+            end
+            shrinked = curr_actual.gsub(/\s+/, "").downcase
+            curr_expected = expected.next.strip
+            if !(shrinked.eql?(curr_expected))
+                return false
+            end
+        end
+        return true
+    end
+
     def self.test_match(test_file, inp, oup, expected_oup, time_limit, gr_modified, required_input, lines)
         if required_input
             cmd = "ruby #{test_file} < #{inp} > #{oup}"

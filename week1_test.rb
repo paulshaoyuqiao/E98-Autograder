@@ -8,6 +8,8 @@ class Week1Test < Test::Unit::TestCase
     @@minutes_in_decade = './week1/ch02/minutes_in_decade.rb'
     @@bigger_better = './week1/ch05/bigger_better_favorite_number.rb'
     @@greeting = './week1/ch05/full_name_greeting.rb'
+    @@angry_boss = './week1/ch06/angry_boss.rb'
+    @@table = './week1/ch06/table_of_contents.rb'
 
     def test_age_in_seconds
         assert(Interactive.test_num_match_only(
@@ -101,5 +103,27 @@ class Week1Test < Test::Unit::TestCase
         ))
     end
 
+    def test_angry_boss
+        assert(Interactive.test_partial_str_match(
+            @@angry_boss,
+            './week1_test/angry_boss_inp_1.txt',
+            './week1_test/angry_boss_oup_1.txt',
+            1
+        ))
+        assert(Interactive.test_partial_str_match(
+            @@angry_boss,
+            './week1_test/angry_boss_inp_2.txt',
+            './week1_test/angry_boss_oup_2.txt',
+            1
+        ))
+    end
+
+    def test_table
+        assert(Interactive.test_text_align(
+            @@table,
+            './week1_test/table_oup.txt',
+            './week1_test/table_expected.txt'
+        ))
+    end
 end
 

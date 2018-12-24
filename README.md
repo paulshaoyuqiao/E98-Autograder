@@ -4,11 +4,10 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________
 ## Most Recent Update on Dec 17th, 2018 - 5:47PM PST - Rev D
 Newest Changes:
-* Updated partial clone link to reflect Winter 2018 offering
+* Added Additional Tests for Chapter 6 assignments
 * Updated Interactive Class:
-  * When scanning lines for numeric comparison, only lines that contain **numbers** will be considered.
-  * When scanning lines for string comparison, only lines **whose indices are included in the target array** will be considered.
-* Added Initial Tests for Chapter 5 assignments.
+  * Allows searching for particular input strings in output lines.
+  * Allows simple testing of text alignment.
 
 #### Author: Paul Shao
 
@@ -65,11 +64,11 @@ Primary Testing Method: `Interactive.test_match`
 `angry_grandma.rb`
 
 ### How it works for Interactive Test
-It takes in the following 4 files, 
+It takes in the following 4 files,
 1. `students_program.rb`
 2. `test_input.txt`
 3. `test_output.txt`
 4. `expected_output.txt`
 
-Then, with a **given time constraint**, the interactive class will run the program with the test input in the textfile, redirect the output stream to the empty textfile, and in the end, compare that against the expected output line by line. 
+Then, with a **given time constraint**, the interactive class will run the program with the test input in the textfile, redirect the output stream to the empty textfile, and in the end, compare that against the expected output line by line.
 
