@@ -1,3 +1,0 @@
-Non-leap year: 8760
-Leap year: 8784
-Average year: 8766.0
