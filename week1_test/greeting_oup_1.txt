@@ -1,4 +1,4 @@
-Hello! What is your first name?
+What is your first name?
+What is your last name?
 What is your middle name?
-Finally, what is your last name?
-Welcome ICS Winter BootCamp Winter 2018!
+Hello, ICS BootCamp Winter 2018 Winter!
