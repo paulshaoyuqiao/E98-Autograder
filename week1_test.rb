@@ -81,25 +81,19 @@ class Week1Test < Test::Unit::TestCase
     end
 
     def test_greeting
-        assert(Interactive.test_match(
+        assert(Interactive.test_complete_partial_match(
             @@greeting,
             './week1_test/greeting_inp_1.txt',
             './week1_test/greeting_oup_1.txt',
             './week1_test/greeting_expected_1.txt',
-            1,
-            false,
-            true,
-            [4]
+            1
         ))
-        assert(Interactive.test_match(
+        assert(Interactive.test_complete_partial_match(
             @@greeting,
             './week1_test/greeting_inp_2.txt',
             './week1_test/greeting_oup_2.txt',
             './week1_test/greeting_expected_2.txt',
-            1,
-            false,
-            true,
-            [4]
+            1
         ))
     end
 

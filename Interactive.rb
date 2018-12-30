@@ -38,16 +38,16 @@ class Interactive
                 curr_expected = expected.next.strip
                 actual_number = curr_actual.scan(@@NUM_PATTERN).map {|x| x.to_f }
                 expected_number = curr_expected.scan(@@NUM_PATTERN).map {|y| y.to_f }
-                if not actual_number.any?
+                unless actual_number.any?
                     next
                 end
                 if multiple_ans
                     num = actual_number[0]
-                    if not expected_number.include?(num)
+                    unless expected_number.include?(num)
                         return false
                     end
                 else
-                    if not (expected_number & actual_number).any?
+                    unless (expected_number & actual_number).any?
                         return false
                     end
                 end
@@ -83,6 +83,39 @@ class Interactive
         return false
     end
 
+    def self.test_complete_partial_match(test_file, inp, oup, expected, time_limit)
+        cmd = "ruby #{test_file} < #{inp} > #{oup}"
+        begin
+            output = Timeout::timeout(time_limit) do
+                system(cmd)
+            end
+            compare = File.readlines(expected).each
+            # target = input.next.strip.upcase
+            # actual = File.readlines(oup).each
+            i = 0
+            while i < compare.size
+                i += 1
+                compareTo = compare.next.strip
+                actual = File.readlines(oup).each
+                j = 0
+                count = 0
+                while j < actual.size
+                    j += 1
+                    target = actual.next.strip
+                    if target.include?(compareTo)
+                        count += 1
+                    end
+                end
+            end
+            if count < compare.size
+                return false
+            end
+        rescue Timeout::Error
+            return false
+        end
+        return true
+    end
+
     def self.test_text_align(test_file, oup, expected_oup)
         cmd = "ruby #{test_file} > #{oup}"
         system(cmd)
@@ -94,7 +127,7 @@ class Interactive
             i += 1
             curr_actual = actual.next
         end
-        while i < actual.size
+        until i >= actual.size
             i += 1
             curr_actual = actual.next
             if curr_actual.size != adjustment
@@ -102,7 +135,7 @@ class Interactive
             end
             shrinked = curr_actual.gsub(/\s+/, "").downcase
             curr_expected = expected.next.strip
-            if !(shrinked.eql?(curr_expected))
+            unless shrinked.eql?(curr_expected)
                 return false
             end
         end
@@ -128,17 +161,17 @@ class Interactive
                     curr_actual = actual.next.strip
                     curr_expected = expected.next.strip
                     if curr_expected.match?(@@NUM_PATTERN)
-                        if !(assert_num_equal(curr_actual, curr_expected, 0.0001))
+                        unless assert_num_equal(curr_actual, curr_expected, 0.0001)
                             return false
                         end
                     else
-                        if !(curr_expected.eql?(curr_actual))
+                        unless curr_expected.eql?(curr_actual)
                             return false
                         end
                     end
                     if gr_modified
                         if curr_actual[0..1].eql?("NO")
-                            if !(grandma_test(curr_actual, curr_expected))
+                            unless grandma_test(curr_actual, curr_expected)
                                 return false
                             end
                         end
@@ -167,11 +200,11 @@ class Interactive
     def self.grandma_test(curr_actual, curr_expected)
         curr_actual_first_half = curr_actual[0..13]
         curr_expected_first_half = curr_expected[0..13]
-        if !(curr_expected_first_half.eql?(curr_actual_first_half))
+        unless curr_expected_first_half.eql?(curr_actual_first_half)
             return false
         end
         curr_actual_year = curr_actual[14..17].to_i
-        if !(in_range(curr_actual_year, 1930, 1950))
+        unless in_range(curr_actual_year, 1930, 1950)
             return false
         end
         return true
@@ -179,7 +212,7 @@ class Interactive
 
     # Helper method written to check if 2 strings are equal.
     def self.assert_equal(s1, s2)
-        if !(s1.eql?(s2))
+        unless s1.eql?(s2)
             puts "Error: Unmatched output. Expecting #{s1}, but got #{s2}."
         end
     end

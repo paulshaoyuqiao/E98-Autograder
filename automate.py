@@ -9,7 +9,7 @@ import pandas as pd
 PARTIAL_CLONE_PREV = "svn export --force https://github.com/{}/ics_bc_s18/trunk/{}"
 # The link above was only used for testing purposes (fetching files from previous semester offerings).
 
-PARTIAL_CLONE = "svn export --force https://github.com/{}/w18_icsbc/trunk/{}"
+PARTIAL_CLONE = "svn export --non-interactive --no-auth-cache https://github.com/{}/{}/trunk/{}"
 BASE_URL = "git clone https://github.com/{}/ics_bc_s18.git"
 REMOVE_CMD = "rm -rf {}"
 SEARCH_PATH = "./{}/{}/{}"
@@ -25,14 +25,14 @@ def normalize_score(passed, failed, total):
     '''
     return passed / (passed + failed) * total
 
-
-def fetch_from_github(usernames, week, chapters, files):
+def fetch_from_github(usernames, week, repo_names, chapters, files):
     '''
     Given a list of Github usernames and an assignment name,
     fetch from the designated Github repositories the students'
     code files, ane execute the autograder on it.
     @param usernames -> a list of usernames (to be used as baseURL)
     @param week -> the week this assignment is given (to search for the code file)
+    @param repo_names -> the name of the repository that contains all the code files for this course
     @param chapters -> a list of chapters (to search for the code file)
     @param files -> a list of the names of all files to test the scripts on
     @return a CSV file containing all the students' names assoicated with
@@ -43,8 +43,9 @@ def fetch_from_github(usernames, week, chapters, files):
     scores['Week'] = []
     scores['Tested Method'] = []
     scores['Score'] = []
+    i = 0
     for username in usernames:
-        repository_url = PARTIAL_CLONE.format(username, week)
+        repository_url = PARTIAL_CLONE.format(username, repo_names[i], week)
         os.system(repository_url)
         print('fetch success!')
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
@@ -62,6 +63,7 @@ def fetch_from_github(usernames, week, chapters, files):
             scores['Score'].append(score)
         clear_repository = REMOVE_CMD.format(week)
         os.system(clear_repository)
+        i += 1
     score_summary = pd.DataFrame(scores)
     summary_name = '{}_scoring_summary.csv'.format(week)
     score_summary.to_csv(summary_name)

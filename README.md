@@ -4,10 +4,10 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________
 ## Most Recent Update on Dec 17th, 2018 - 5:47PM PST - Rev D
 Newest Changes:
-* Added Additional Tests for Chapter 6 assignments
-* Updated Interactive Class:
-  * Allows searching for particular input strings in output lines.
-  * Allows simple testing of text alignment.
+* For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
+  * `chapters = ['ch02', 'ch05', 'ch06']`
+  * `files = ['age_in_seconds.rb','author_age.rb','hours_in_year.rb','minutes_in_decade.rb','bigger_better_favorite_number.rb','full_name_greeting.rb','angry_boss.rb','table_of_contents.rb']`
+* IMPORTANT: Now when calling the main method `fetch_from_github`, an additional parameter is specified: `repo_names`. This parameter serves to specify the name of the repository the student is using for the assignment (in particular if the student is not using the default repo name). Please see the **updated Primary Procedures** for more guidelines.
 
 #### Author: Paul Shao
 
@@ -27,8 +27,9 @@ The streamlined version of the autograder is run through the CLI directly. Follo
 4. `fetch_from_github` takes in 4 parameters: `usernames`, `week`, `chapters`, `files`:
    1. `usernames` is a list of the Github usernames for your students.
    2. `week` is a string indicating the current week of the assignment (e.x. `week1`).
-   3. `chapters` is a list of the chapters this assignment contains (e.x. `['ch02', 'ch05']`).
-   4. `files` is a list of the files the autograder will test (e.x. `['age_in_seconds.rb', 'hours_in_year.rb']`).
+   3. `repo_names` is a list of the Github repostiory names corresponding to the student **at the same list index**. 
+   4. `chapters` is a list of the chapters this assignment contains (e.x. `['ch02', 'ch05']`).
+   5. `files` is a list of the files the autograder will test (e.x. `['age_in_seconds.rb', 'hours_in_year.rb']`).
 5. Determine the values of all 4 parameters, assign them to variables, and execute the `fetch_from_github` with the paramters, you should see statements such as `fetch success!` during the entire process.
 6. In the end, a `csv` file containing all the students' scores will be generated in the main directory of this Python script:
    1. The `csv` file contains 4 columns: `Github username`, `Week`, `Tested Method`, and `Score`.
