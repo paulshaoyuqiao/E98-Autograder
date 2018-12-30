@@ -2,7 +2,8 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 29th, 2018 - 11:20PM EST - Rev E
+## Most Recent Update on Dec 30th, 2018 - 9:30PM EST - Rev F
+* Updated `test_table` in `week1_test.rb` so that it won't misgrade students' response due to differences in tabs/spaces
 Newest Changes:
 * For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
   * `chapters = ['ch02', 'ch05', 'ch06']`
