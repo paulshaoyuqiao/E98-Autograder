@@ -2,7 +2,7 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 17th, 2018 - 5:47PM PST - Rev D
+## Most Recent Update on Dec 29th, 2018 - 11:20PM EST - Rev E
 Newest Changes:
 * For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
   * `chapters = ['ch02', 'ch05', 'ch06']`
