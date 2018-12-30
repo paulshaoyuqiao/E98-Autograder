@@ -1,4 +1,4 @@
-Hi! What's your first name?
-Alexander? That's a cool name! What's your middle name?
-The? Wow! That's a very unique name. What's your last name?
-Awesome! Nice to meet you Alexander The Great!
+Hello! What is your first name?
+What is your middle name?
+Finally, what is your last name?
+Welcome Alexander The Great!

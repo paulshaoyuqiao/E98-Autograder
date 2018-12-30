@@ -43,9 +43,9 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
     scores['Week'] = []
     scores['Tested Method'] = []
     scores['Score'] = []
-    i = 0
+    index = 0
     for username in usernames:
-        repository_url = PARTIAL_CLONE.format(username, repo_names[i], week)
+        repository_url = PARTIAL_CLONE.format(username, repo_names[index], week)
         os.system(repository_url)
         print('fetch success!')
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
@@ -63,7 +63,7 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
             scores['Score'].append(score)
         clear_repository = REMOVE_CMD.format(week)
         os.system(clear_repository)
-        i += 1
+        index += 1
     score_summary = pd.DataFrame(scores)
     summary_name = '{}_scoring_summary.csv'.format(week)
     score_summary.to_csv(summary_name)
