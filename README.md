@@ -2,9 +2,11 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 30th, 2018 - 9:30PM EST - Rev F
+## Most Recent Update on Dec 31st, 2018 - 1:15AM EST - Rev G
 * Updated `test_table` in `week1_test.rb` so that it won't misgrade students' response due to differences in tabs/spaces
+
 Newest Changes:
+* The autograder will now check for completion of interactive lab assignments as well.
 * For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
   * `chapters = ['ch02', 'ch05', 'ch06']`
   * `files = ['age_in_seconds.rb','author_age.rb','hours_in_year.rb','minutes_in_decade.rb','bigger_better_favorite_number.rb','full_name_greeting.rb','angry_boss.rb','table_of_contents.rb']`
