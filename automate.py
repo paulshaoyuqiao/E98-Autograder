@@ -23,6 +23,8 @@ def normalize_score(passed, failed, total):
     @param total -> the total allocated points for this method.
     @return a normalized score.
     '''
+    if passed + failed == 0:
+        return 0
     return passed / (passed + failed) * total
 
 def fetch_from_github(usernames, week, repo_names, chapters, files):
