@@ -13,6 +13,7 @@ PARTIAL_CLONE = "svn export --non-interactive --no-auth-cache https://github.com
 BASE_URL = "git clone https://github.com/{}/ics_bc_s18.git"
 REMOVE_CMD = "rm -rf {}"
 SEARCH_PATH = "./{}/{}/{}"
+LAB_CHECK = "{}/.lab{}_progress.txt"
 
 def normalize_score(passed, failed, total):
     '''
@@ -50,6 +51,15 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
         repository_url = PARTIAL_CLONE.format(username, repo_names[index], week)
         os.system(repository_url)
         print('fetch success!')
+        wk = week[-1]
+        lab_progress = LAB_CHECK.format(week, wk)
+        lab_score = 0
+        if '2' in open(lab_progress).read():
+            lab_score = 2
+        scores['Github Username'].append(username)
+        scores['Week'].append(week)
+        scores['Tested Method'].append("lab{}".format(wk))
+        scores['Score'].append(lab_score)
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
         p = os.popen(cmd)
         s = p.read().strip()
