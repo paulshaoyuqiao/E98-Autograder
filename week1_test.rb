@@ -31,6 +31,7 @@ class Week1Test < Test::Unit::TestCase
             1,
             false,
             false,
+            false,
             ''
         ))
     end

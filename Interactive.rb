@@ -52,7 +52,6 @@ class Interactive
                     end
                 end
             end
-            return true
         rescue Timeout::Error
             puts "Error: your method is taking too long to run."
             return false

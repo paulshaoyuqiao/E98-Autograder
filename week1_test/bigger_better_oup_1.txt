@@ -1,2 +1,2 @@
-Hello! What is your favorite number?
-That's a great favorite number! But consider the number 16 as a bigger and better favorite number!
+What's your favorite number?
+This is a better option:16!
