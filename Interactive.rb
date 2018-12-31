@@ -130,7 +130,7 @@ class Interactive
         until i >= actual.size
             i += 1
             curr_actual = actual.next.strip
-            if curr_actual.size != adjustment - 2
+            if curr_actual.size - (adjustment - 2) > 10
                 return false
             end
             shrinked = curr_actual.gsub(/\s+/, "").downcase
