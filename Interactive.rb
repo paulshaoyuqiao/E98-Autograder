@@ -122,7 +122,6 @@ class Interactive
         actual = File.readlines(oup).each
         expected = File.readlines(expected_oup).each
         adjustment = actual.next.size
-        puts "adjustment is " + adjustment.to_s
         i = 1
         while i < actual.size - 9
             i += 1
@@ -131,15 +130,11 @@ class Interactive
         until i >= actual.size
             i += 1
             curr_actual = actual.next.strip
-            puts "curr_actual: " + curr_actual
-            puts "curr_actual.size: " + curr_actual.size.to_s
             if curr_actual.size != adjustment - 2
                 return false
             end
             shrinked = curr_actual.gsub(/\s+/, "").downcase
             curr_expected = expected.next.strip
-            puts "shrinked: " + shrinked
-            puts "curr_expected: " + curr_expected
             unless shrinked.eql?(curr_expected)
                 return false
             end
