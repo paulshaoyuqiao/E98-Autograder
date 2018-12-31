@@ -55,7 +55,7 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
         lab_progress = LAB_CHECK.format(week, wk)
         lab_score = 0
         if '2' in open(lab_progress).read():
-            lab_score = 2
+            lab_score = 1
         scores['Github Username'].append(username)
         scores['Week'].append(week)
         scores['Tested Method'].append("lab{}".format(wk))
