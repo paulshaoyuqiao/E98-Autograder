@@ -15,8 +15,6 @@ Newest Changes:
   * `files = ['99_bob.rb', 'deaf_grandma.rb', 'deaf_grandma_extended.rb', 'leap_year_counter.rb', 'array_sort.rb', 'table_of_contents.rb']`
 * IMPORTANT: Now when calling the main method `fetch_from_github`, an additional parameter is specified: `repo_names`. This parameter serves to specify the name of the repository the student is using for the assignment (in particular if the student is not using the default repo name). Please see the **updated Primary Procedures** for more guidelines.
 
-#### Author: Paul Shao
-
 ### Usages:
 The E98-autograder compiles the primary scripts required to automate testing of students' Ruby assignments.
 The autograder can be used in the following 2 ways:
