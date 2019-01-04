@@ -19,7 +19,7 @@ Newest Changes:
 The E98-autograder compiles the primary scripts required to automate testing of students' Ruby assignments.
 The autograder can be used in the following 2 ways:
 1. Streamline testing students' codes against expected outputs and generate final scores through `automate.py`.
-2. Unit testing individual methods (should only be used for debugging or validating purposes) through `test_assignments_demo.rb`.
+2. Unit testing individual methods (should only be used for debugging or validating purposes).
 ______________________________________________________________________________________________________________________________
 **To all course staff**: Please run the tests to generate the scores **directly through `automate.py`**. Feel free to consult me **first** if you are confused about the process or want to test individual methods.
 ______________________________________________________________________________________________________________________________

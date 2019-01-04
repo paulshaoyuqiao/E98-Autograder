@@ -1,4 +1,0 @@
-What is your first name?
-What is your middle name?
-What is your last name?
-Hello, Alexander The Great!
