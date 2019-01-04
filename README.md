@@ -43,7 +43,7 @@ ________________________________________________________________________________
 ### Alternative Usages (for unit testing/debugging purposes ONLY)
 #### Again, please discuss with me before using the autograder this way.
 
-To allow for unit testing of specific methods locally, run `test_assignments_demo.rb`, it will invoke both the **static unit test and interactive test instances** on different methods.
+To allow for unit testing of specific methods locally, you should create a ruby unit test classes consisting of unit testing and integrated testing for interactive methods, it will invoke both the **static unit test and interactive test instances** on different methods.
 ______________________________________________________________________________________________________________________________
 ### Current Testing Parameters/Functionalities Supported:
 
@@ -53,27 +53,21 @@ ________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________________
 
-### Demos:
+### Further Explanations:
 
 **Unit Test for Static (One-time Input and Output) Methods**
 
 Primary Testing Method: `assert_equal`
 
-`add.rb`
+**Integrated Test**
 
-**Interactive Test**
-
-Primary Testing Method: `Interactive.test_match`
-
-`greet.rb`
-`angry_grandma.rb`
+Primary Testing Method: `Interactive.test_match` + `assert`
 
 ### How it works for Interactive Test
-It takes in the following 4 files,
+It takes in usually around 3~4 files,
 1. `students_program.rb`
-2. `test_input.txt`
+2. `test_input.txt` (could be optional depending on whether or not **input** is required)
 3. `test_output.txt`
 4. `expected_output.txt`
 
 Then, with a **given time constraint**, the interactive class will run the program with the test input in the textfile, redirect the output stream to the empty textfile, and in the end, compare that against the expected output line by line.
-
