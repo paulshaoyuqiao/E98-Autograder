@@ -2,7 +2,7 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 31st, 2018 - 10:45PM EST - Rev H
+## Most Recent Update on Jan 3rd, 2019 - 10:45PM EST - Rev H
 * Updated with tests for assignments from **week2**; updated **parameters** for `chapters` and `files`, see **Newest Changes**.
 * Updated `test_match` method in the `Interactive` class to handle trailing spaces in the user output.
 
