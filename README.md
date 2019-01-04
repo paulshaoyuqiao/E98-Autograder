@@ -2,14 +2,15 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Dec 31st, 2018 - 1:15AM EST - Rev G
-* Updated `test_table` in `week1_test.rb` so that it won't misgrade students' response due to differences in tabs/spaces
+## Most Recent Update on Dec 31st, 2018 - 10:45PM EST - Rev H
+* Updated with tests for assignments from **week2**; updated **parameters** for `chapters` and `files`, see **Newest Changes**.
+* Updated `test_match` method in the `Interactive` class to handle trailing spaces in the user output.
 
 Newest Changes:
 * The autograder will now check for completion of interactive lab assignments as well.
 * For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
-  * `chapters = ['ch02', 'ch05', 'ch06']`
-  * `files = ['age_in_seconds.rb','author_age.rb','hours_in_year.rb','minutes_in_decade.rb','bigger_better_favorite_number.rb','full_name_greeting.rb','angry_boss.rb','table_of_contents.rb']`
+  * `chapters = ['ch07', 'ch08']`
+  * `files = ['99_bob.rb', 'deaf_grandma.rb', 'deaf_grandma_extended.rb', 'leap_year_counter.rb', 'array_sort.rb', 'table_of_contents.rb']`
 * IMPORTANT: Now when calling the main method `fetch_from_github`, an additional parameter is specified: `repo_names`. This parameter serves to specify the name of the repository the student is using for the assignment (in particular if the student is not using the default repo name). Please see the **updated Primary Procedures** for more guidelines.
 
 #### Author: Paul Shao

@@ -5,10 +5,10 @@
 #AUTHOR: Paul Shao
 
 class Exec
-  @@test_method = %w(test_age_in_seconds test_author_age test_hours_in_year test_minutes_in_decade test_bigger_better_favorite_number test_greeting test_angry_boss test_table)
+  @@test_method = %w(test_99_bottles test_deaf_grandma test_deaf_grandma_extended test_leap_year_counter test_array_sort test_formatted_table)
   def self.run_all_test
     @@test_method.each { |method|
-        test_output = `ruby week1_test.rb -n #{method} --runner console --verbose=progress`
+        test_output = `ruby week2_test.rb -n #{method} --runner console --verbose=progress`
         failed_tests = test_output.chomp.split('').count('F')
         passed_tests = test_output.chomp.split('').count('.')
         actual_method = method[5..method.length - 1]

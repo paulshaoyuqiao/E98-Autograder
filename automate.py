@@ -9,7 +9,7 @@ import pandas as pd
 PARTIAL_CLONE_PREV = "svn export --force https://github.com/{}/ics_bc_s18/trunk/{}"
 # The link above was only used for testing purposes (fetching files from previous semester offerings).
 
-PARTIAL_CLONE = "svn export --non-interactive --no-auth-cache https://github.com/{}/{}/trunk/{}"
+PARTIAL_CLONE = "svn export https://github.com/{}/{}/trunk/{}"
 BASE_URL = "git clone https://github.com/{}/ics_bc_s18.git"
 REMOVE_CMD = "rm -rf {}"
 SEARCH_PATH = "./{}/{}/{}"
@@ -79,3 +79,5 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
     score_summary = pd.DataFrame(scores)
     summary_name = '{}_scoring_summary.csv'.format(week)
     score_summary.to_csv(summary_name)
+
+print('Please provide a list of usernames, repo_names, chapters, ruby files(methods), and specify the week of the assignment')

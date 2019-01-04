@@ -82,34 +82,31 @@ class Interactive
         return false
     end
 
-    def self.test_complete_partial_match(test_file, inp, oup, expected, time_limit)
-        cmd = "ruby #{test_file} < #{inp} > #{oup}"
+    def self.test_complete_partial_match(test_file, inp, oup, expected, time_limit, require_input)
+        if require_input
+            cmd = "ruby #{test_file} < #{inp} > #{oup}"
+        else
+            cmd = "ruby #{test_file} > #{oup}"
+        end
         begin
             output = Timeout::timeout(time_limit) do
                 system(cmd)
             end
             compare = File.readlines(expected).each
-            # target = input.next.strip.upcase
-            # actual = File.readlines(oup).each
+            actual = File.readlines(oup).each
             i = 0
             while i < compare.size
                 i += 1
                 compareTo = compare.next.strip
-                actual = File.readlines(oup).each
-                j = 0
-                count = 0
-                while j < actual.size
-                    j += 1
-                    target = actual.next.strip
-                    if target.include?(compareTo)
-                        count += 1
-                    end
+                target = actual.next.strip
+                if actual.eql?("")
+                    break
+                end
+                unless target.include?(compareTo)
+                    return false
                 end
             end
-            if count < compare.size
-                return false
-            end
-        rescue Timeout::Error
+            rescue Timeout::Error
             return false
         end
         return true
@@ -164,7 +161,7 @@ class Interactive
                             return false
                         end
                     else
-                        unless curr_expected.eql?(curr_actual)
+                        if not (curr_expected.strip).eql?(curr_actual.strip)
                             return false
                         end
                     end
@@ -178,8 +175,6 @@ class Interactive
                 end
             end
             rescue Timeout::Error
-            puts "Error: your method is taking too long to run.
-            Check your codes to see if there is an uncaught infinite loop."
             return false
         end
         return true
