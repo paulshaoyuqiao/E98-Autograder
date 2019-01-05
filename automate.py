@@ -48,13 +48,16 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
     scores['Score'] = []
     index = 0
     for username in usernames:
+        print('We are currently grading this week\'s assignment by {}...'.format(username))
         repository_url = PARTIAL_CLONE.format(username, repo_names[index], week)
         try:
             os.system(repository_url)
         except ConnectionError as e:
             print(e)
             print('Check if you have input the student\'s repository names correctly. Otherwise please \
-            wait for a few more minutes before running the autograder again. Thanks.')
+            wait for a few more minutes before running the autograder on this student again. Thanks.')
+            print('Currently moving on to the next student....')
+            continue
         print('fetch success!')
         wk = week[-1]
         lab_progress = LAB_CHECK.format(week, wk)
@@ -64,7 +67,8 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
                 lab_score = 1
         except FileNotFoundError as e:
             print(e)
-            print('Student {} might not have finished the lab for this week.'.format(username))
+            print('Student {} might not have finished the lab for this week. Please contact the student \
+            and make sure he/she has the lab progress file with a completion score of 2 inside.'.format(username))
         scores['Github Username'].append(username)
         scores['Week'].append(week)
         scores['Tested Method'].append("lab{}".format(wk))
