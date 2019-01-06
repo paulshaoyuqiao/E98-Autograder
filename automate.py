@@ -26,7 +26,7 @@ def normalize_score(passed, failed, total):
     '''
     if passed + failed == 0:
         return 0
-    return passed / (passed + failed) * total
+    return passed / (passed + failed + 0.0) * total
 
 def fetch_from_github(usernames, week, repo_names, chapters, files):
     '''
@@ -64,16 +64,25 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
         lab_score = 0
         try:
             if '2' in open(lab_progress).read():
+                lab_score = 2
+            else:
                 lab_score = 1
         except FileNotFoundError as e:
             print(e)
-            print('Student {} might not have finished the lab for this week. Please contact the student \
-            and make sure he/she has the lab progress file with a completion score of 2 inside.'.format(username))
+            print('The studenet might not have finished the lab for this week.')
+            print('Please contact the student \
+            and make sure he/she has the lab progress file with a completion score of 2 inside.')
         scores['Github Username'].append(username)
         scores['Week'].append(week)
         scores['Tested Method'].append("lab{}".format(wk))
         scores['Score'].append(lab_score)
+
+        error_tracker = open("errors.txt", "a")
+        error_tracker.write("{} - Errors encountered while tesitng the meethod: \n".format(username))
+        error_tracker.write("\n")
+
         cmd = 'ruby -r "./execute.rb" -e "Exec.run_all_test"'
+
         p = os.popen(cmd)
         s = p.read().strip()
         user_score = s.split('\n')
@@ -88,6 +97,10 @@ def fetch_from_github(usernames, week, repo_names, chapters, files):
             scores['Score'].append(score)
         clear_repository = REMOVE_CMD.format(week)
         os.system(clear_repository)
+
+        error_tracker.write("\n")
+        error_tracker.close()
+
         index += 1
     score_summary = pd.DataFrame(scores)
     summary_name = '{}_scoring_summary.csv'.format(week)

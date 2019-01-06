@@ -1,4 +1,6 @@
 Please enter the desired words (one per line), and press enter when finished:
+
+
 AAAA
 BbAa
 aA
@@ -9,3 +11,4 @@ aabb
 bB
 bBa
 baAb
+Type in as many words as you want. When finished press 'Enter' on an empty line

@@ -3,6 +3,7 @@
 # AUTHOR: Paul Shao
 
 require 'timeout'
+require 'stringio'
 
 class Interactive
     # The primary method for testing interactive programs for the scope of this course.
@@ -138,12 +139,34 @@ class Interactive
         return true
     end
 
+    def self.edit_distance(first, second)
+        first_len = first.length
+        second_len = second.length
+        return first_len if second_len == 0 or second.nil?
+        return second_len if first_len == 0 or first.nil?
+        dp = Array.new(first_len + 1) {Array.new(second_len + 1)}
+        (0..first_len).each {|i| dp[i][0] = i}
+        (0..second_len).each {|j| dp[0][j] = j}
+        (1..second_len).each do |j|
+            (1..first_len).each do |i|
+                dp[i][j] = if first[i - 1] == second[j - 1]
+                    dp[i - 1][j - 1]
+                else
+                    [dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + 1].min
+                end
+            end
+        end
+        dp[first_len][second_len]
+    end
+
     def self.test_match(test_file, inp, oup, expected_oup, time_limit, gr_modified, required_input, lines)
         if required_input
             cmd = "ruby #{test_file} < #{inp} > #{oup}"
         else
             cmd = "ruby #{test_file} > #{oup}"
         end
+        error_tracker = File.open("errors.txt","a")
+        error_tracker.write("Testing errors for #{test_file} \n")
         begin
             output = Timeout::timeout(time_limit) do
                 system(cmd)
@@ -156,18 +179,33 @@ class Interactive
                 if lines.include?(i)
                     curr_actual = actual.next.strip
                     curr_expected = expected.next.strip
+                    while curr_expected.eql?("")
+                        curr_expected = expected.next.strip
+                    end
+                    while curr_actual.eql?("")
+                        curr_actual = actual.next.strip
+                        i += 1
+                    end
                     if curr_expected.match?(@@NUM_PATTERN)
                         unless assert_num_equal(curr_actual, curr_expected, 0.0001)
+                            error_tracker.write("Match Error: Expected #{curr_expected.stirp} , but got#{curr_actual.strip} \n")
+                            error_tracker.close
                             return false
                         end
                     else
-                        if not (curr_expected.strip).eql?(curr_actual.strip)
+                        ces = curr_expected.gsub(/\s+/, "").downcase
+                        cas = curr_actual.gsub(/\s+/, "").downcase
+                        unless edit_distance(ces, cas) <= 4
+                            error_tracker.write("Match Error: Expected #{curr_expected} , but got#{curr_actual} \n")
+                            error_tracker.close
                             return false
                         end
                     end
                     if gr_modified
                         if curr_actual[0..1].eql?("NO")
                             unless grandma_test(curr_actual, curr_expected)
+                                error_tracker.write("Match Error: Expected #{curr_expected.stirp} , but got#{curr_actual.strip} \n")
+                                error_tracker.close
                                 return false
                             end
                         end
@@ -175,8 +213,10 @@ class Interactive
                 end
             end
             rescue Timeout::Error
+            error_tracker.write("Time Limit Exceeded Error: there might be an infinite loop within. \n")
             return false
         end
+        error_tracker.write("No exceptions found.")
         return true
     end
 
@@ -192,9 +232,9 @@ class Interactive
     # Checks if the first half of the string matches what we expect and the output random year
     # is within the given range.
     def self.grandma_test(curr_actual, curr_expected)
-        curr_actual_first_half = curr_actual[0..13]
-        curr_expected_first_half = curr_expected[0..13]
-        unless curr_expected_first_half.eql?(curr_actual_first_half)
+        curr_actual_first_half = curr_actual[0..13].gsub(/\s+/, "").downcase
+        curr_expected_first_half = curr_expected[0..13].gsub(/\s+/, "").downcase
+        unless edit_distance(curr_actual_first_half, curr_expected_first_half) <= 3
             return false
         end
         curr_actual_year = curr_actual[14..17].to_i

@@ -1,0 +1,312 @@
+eduhmc - Errors encountered while tesitng the meethod: 
+
+
+pected 9 bottles of beer on the wall, 9 bottles of beer. , but got9 bottles of beer on the wall,9 bottles of beer 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotHUH?! SPEAK UP, SONNY! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+Match Error: Expected 9 bottles of beer on the wall, 9 bottles of beer. , but got9 bottles of beer on the wall,9 bottles of beer 
+Testing errors for ./week2/ch07/99_bob.rb 
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+Match Error: Expected Take one down, pass it around, 1 bottle of beer on the wall. , but gotTake one down and pass it around,1 bottles of beer on the wall. 
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1938! 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.bwjustus - Errors encountered while tesitng the meethod: 
+
+
+divyaempranthiri - Errors encountered while tesitng the meethod: 
+
+
+lenzap497 - Errors encountered while tesitng the meethod: 
+
+
+Jeongung26 - Errors encountered while tesitng the meethod: 
+
+
+eduhmc - Errors encountered while tesitng the meethod: 
+
+
+bwjustus - Errors encountered while tesitng the meethod: 
+
+
+divyaempranthiri - Errors encountered while tesitng the meethod: 
+
+
+lenzap497 - Errors encountered while tesitng the meethod: 
+
+
+Jeongung26 - Errors encountered while tesitng the meethod: 
+
+
+eduhmc - Errors encountered while tesitng the meethod: 
+
+
+bwjustus - Errors encountered while tesitng the meethod: 
+
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1945! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1939! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1935! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1948! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1933! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1944! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1950! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1943! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1944! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1937! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1948! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1940! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1950! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1937! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1944! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1937! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1931! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1941! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1945! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotWhat do you want to say to Grandma? 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1949! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.bwjustus - Errors encountered while tesitng the meethod: 
+
+
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP SONNY 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP SONNY 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP SONNY 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.divyaempranthiri - Errors encountered while tesitng the meethod: 
+
+
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1941! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1931! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1939! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.lenzap497 - Errors encountered while tesitng the meethod: 
+
+
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1942! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1931! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotNO, NOT SINCE 1937! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Jeongung26 - Errors encountered while tesitng the meethod: 
+
+
+Testing errors for ./week2/ch07/99_bob.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1938! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP, SONNY! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP, SONNY! 
+Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
+Match Error: Expected HUH?! SPEAK UP SONNY! , but gotNO, NOT SINCE 1938! 
+Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
+No exceptions found.eduhmc - Errors encountered while tesitng the meethod: 
+
+

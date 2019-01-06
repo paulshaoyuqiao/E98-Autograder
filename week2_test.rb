@@ -9,7 +9,7 @@ class Week2Test < Test::Unit::TestCase
     @@array_sort = './week2/ch08/array_sort.rb'
     @@table_of_contents = './week2/ch08/table_of_contents.rb'
 
-    def test_99_bottles
+    def test_ninety_nine_bottles
         assert(Interactive.test_match(
             @@nn_bottles,
             '',
@@ -18,11 +18,11 @@ class Week2Test < Test::Unit::TestCase
             1,
             true,
             false,
-            Array(1..350)
+            Array(1..200)
         ))
     end
 
-    def test_deaf_grandma
+    def test_deaf_grandma1
         assert(Interactive.test_match(
             @@deaf_grandma,
             './week2_test/deaf_grandma_inp_quit.txt',
@@ -31,9 +31,11 @@ class Week2Test < Test::Unit::TestCase
             1,
             true,
             true,
-            Array(2..10)
+            Array(1..2)
         ))
+    end
 
+    def test_deaf_grandma2
         assert(Interactive.test_match(
             @@deaf_grandma,
             './week2_test/deaf_grandma_inp_years.txt',
@@ -42,9 +44,11 @@ class Week2Test < Test::Unit::TestCase
             1,
             true,
             true,
-            Array(2..10)
+            Array(1..2)
         ))
+    end
 
+    def test_deaf_grandma3
         assert(Interactive.test_match(
             @@deaf_grandma,
             './week2_test/deaf_grandma_inp_1.txt',
@@ -53,9 +57,11 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..20)
+            Array(2..6)
         ))
+    end
 
+    def test_deaf_grandma4
         assert(Interactive.test_match(
             @@deaf_grandma,
             './week2_test/deaf_grandma_inp_2.txt',
@@ -64,11 +70,11 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..20)
+            Array(2..12)
         ))
     end
 
-    def test_deaf_grandma_extended
+    def test_extended_deaf_grandma1
         assert(Interactive.test_match(
             @@deaf_grandma_extended,
             './week2_test/deaf_grandma_extended_inp_quit.txt',
@@ -77,9 +83,11 @@ class Week2Test < Test::Unit::TestCase
             1,
             true,
             true,
-            Array(2..10)
+            Array(1..2)
         ))
+    end
 
+    def test_extended_deaf_grandma2
         assert(Interactive.test_match(
             @@deaf_grandma_extended,
             './week2_test/byes_inp.txt',
@@ -88,9 +96,11 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..20)
+            Array(2..10)
         ))
+    end
 
+    def test_extended_deaf_grandma3
         assert(Interactive.test_match(
             @@deaf_grandma_extended,
             './week2_test/integrated_inp_1.txt',
@@ -99,9 +109,11 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..30)
+            Array(2..16)
         ))
+    end
 
+    def test_extended_deaf_grandma4
         assert(Interactive.test_match(
             @@deaf_grandma_extended,
             './week2_test/integrated_inp_2.txt',
@@ -110,11 +122,11 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..30)
+            Array(2..20)
         ))
     end
 
-    def test_leap_year_counter
+    def test_leap_year_counter1
         assert(Interactive.test_num_match_only(
             @@leap_year_counter,
             './week2_test/leap_oup_none.txt',
@@ -124,7 +136,9 @@ class Week2Test < Test::Unit::TestCase
             true,
             './week2_test/leap_inp_none.txt'
         ))
+    end
 
+    def test_leap_year_counter2
         assert(Interactive.test_num_match_only(
             @@leap_year_counter,
             './week2_test/leap_oup_one.txt',
@@ -134,7 +148,9 @@ class Week2Test < Test::Unit::TestCase
             true,
             './week2_test/leap_inp_one.txt'
         ))
+    end
 
+    def test_leap_year_counter3
         assert(Interactive.test_num_match_only(
             @@leap_year_counter,
             './week2_test/leap_oup_many.txt',
@@ -146,7 +162,7 @@ class Week2Test < Test::Unit::TestCase
         ))
     end
 
-    def test_array_sort
+    def test_arr_sort1
         assert(Interactive.test_match(
             @@array_sort,
             './week2_test/standard_arr_inp.txt',
@@ -157,7 +173,9 @@ class Week2Test < Test::Unit::TestCase
             true,
             Array(2..11)
         ))
+    end
 
+    def test_arr_sort2
         assert(Interactive.test_match(
             @@array_sort,
             './week2_test/mixed_arr_inp.txt',
@@ -168,7 +186,9 @@ class Week2Test < Test::Unit::TestCase
             true,
             Array(2..11)
         ))
+    end
 
+    def test_arr_sort3
         assert(Interactive.test_match(
             @@array_sort,
             './week2_test/empty_arr_inp.txt',
@@ -181,7 +201,7 @@ class Week2Test < Test::Unit::TestCase
         ))
     end
 
-    def test_formatted_table
+    def test_table_of_contents
         assert(Interactive.test_text_align(
             @@table_of_contents,
             './week2_test/table_oup.txt',

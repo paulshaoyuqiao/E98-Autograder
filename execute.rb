@@ -5,14 +5,23 @@
 #AUTHOR: Paul Shao
 
 class Exec
-  @@test_method = %w(test_99_bottles test_deaf_grandma test_deaf_grandma_extended test_leap_year_counter test_array_sort test_formatted_table)
+  @@test_method = [['ninety_nine_bottles'], ['deaf_grandma1', 'deaf_grandma2', 'deaf_grandma3', 'deaf_grandma4'], ['extended_deaf_grandma1', 'extended_deaf_grandma2', 'extended_deaf_grandma3', 'extended_deaf_grandma4'],['leap_year_counter1', 'leap_year_counter2', 'leap_year_counter3'], ['arr_sort1', 'arr_sort2', 'arr_sort3'], ['table_of_contents']]
   def self.run_all_test
-    @@test_method.each { |method|
-        test_output = `ruby week2_test.rb -n #{method} --runner console --verbose=progress`
-        failed_tests = test_output.chomp.split('').count('F')
-        passed_tests = test_output.chomp.split('').count('.')
-        actual_method = method[5..method.length - 1]
-        puts(actual_method, passed_tests, failed_tests)
-    }
+    i = 0
+    while i < @@test_method.length
+      failed_tests = 0
+      passed_tests = 0
+      inner_len = @@test_method[i].length
+      j = 0
+      while j < @@test_method[i].length
+        method = @@test_method[i][j]
+        test_output = `ruby week2_test.rb -n #{'test_'+method} --runner console --verbose=progress`
+        failed_tests += test_output.chomp.split('').count('F')
+        passed_tests += test_output.chomp.split('').count('.')
+        j += 1
+      end
+      puts(@@test_method[i][0].tr("0-9",""), passed_tests, failed_tests)
+      i += 1
+    end
   end
 end
