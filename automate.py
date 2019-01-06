@@ -26,7 +26,7 @@ def normalize_score(passed, failed, total):
     '''
     if passed + failed == 0:
         return 0
-    return passed / (passed + failed + 0.0) * total
+    return round(passed / (passed + failed + 0.0) * total, 2)
 
 def fetch_from_github(usernames, week, repo_names, chapters, files):
     '''
