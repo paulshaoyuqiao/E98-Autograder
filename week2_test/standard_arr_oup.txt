@@ -1,6 +1,5 @@
 Please enter the desired words (one per line), and press enter when finished:
 
-
 attraction
 bridge
 count
@@ -11,4 +10,3 @@ questionable
 smelly
 torpid
 wonderful
-Type in as many words as you want. When finished press 'Enter' on an empty line

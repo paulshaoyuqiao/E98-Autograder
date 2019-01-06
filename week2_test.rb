@@ -96,7 +96,7 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..10)
+            [2, 3, 4, 6, 7, 8, 11, 12]
         ))
     end
 
@@ -109,7 +109,7 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..16)
+            [2, 3, 4, 5, 6, 7, 8, 10, 11, 13, 16, 17, 18, 19]
         ))
     end
 
@@ -122,7 +122,7 @@ class Week2Test < Test::Unit::TestCase
             5,
             true,
             true,
-            Array(2..20)
+            [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 21, 22, 23]
         ))
     end
 
