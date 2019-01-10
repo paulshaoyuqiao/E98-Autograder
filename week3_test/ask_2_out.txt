@@ -1,0 +1,6 @@
+Do you like Computer Science?
+Please answer "yes" or "no".
+Do you like Computer Science?
+Please answer "yes" or "no".
+Do you like Computer Science?
+true

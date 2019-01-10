@@ -5,7 +5,7 @@
 #AUTHOR: Paul Shao
 
 class Exec
-  @@test_method = [['ninety_nine_bottles'], ['deaf_grandma1', 'deaf_grandma2', 'deaf_grandma3', 'deaf_grandma4'], ['extended_deaf_grandma1', 'extended_deaf_grandma2', 'extended_deaf_grandma3', 'extended_deaf_grandma4'],['leap_year_counter1', 'leap_year_counter2', 'leap_year_counter3'], ['arr_sort1', 'arr_sort2', 'arr_sort3'], ['table_of_contents']]
+  @@test_method = [['ask1', 'ask2'], ['old_roman0', 'old_roman1', 'old_roman2', 'old_roman3', 'old_roman4'], ['new_roman0', 'new_roman10', 'new_roman1', 'new_roman2', 'new_roman3', 'new_roman4', 'new_roman5']]
   def self.run_all_test
     i = 0
     while i < @@test_method.length
@@ -15,7 +15,7 @@ class Exec
       j = 0
       while j < @@test_method[i].length
         method = @@test_method[i][j]
-        test_output = `ruby week2_test.rb -n #{'test_'+method} --runner console --verbose=progress`
+        test_output = `ruby week3_test.rb -n #{'test_' + method} --runner console --verbose=progress`
         failed_tests += test_output.chomp.split('').count('F')
         passed_tests += test_output.chomp.split('').count('.')
         j += 1

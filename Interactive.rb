@@ -60,14 +60,12 @@ class Interactive
         return true
     end
 
-    def self.test_partial_str_match(test_file, inp, oup, time_limit)
+    def self.test_partial_str_match(test_file, inp, oup, target, time_limit)
         cmd = "ruby #{test_file} < #{inp} > #{oup}"
         begin
             output = Timeout::timeout(time_limit) do
                 system(cmd)
             end
-            input = File.readlines(inp).each
-            target = input.next.strip.upcase
             actual = File.readlines(oup).each
             i = 0
             while i < actual.size

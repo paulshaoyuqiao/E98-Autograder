@@ -1,18 +1,12 @@
-Testing errors for ./week2/ch07/99_bob.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
-No exceptions found.Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
-Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP, SONNY! 
-Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
-Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP, SONNY! 
-Testing errors for ./week2/ch07/deaf_grandma_extended.rb 
-Match Error: Expected WHAT WAS THAT?! , but gotHUH?! SPEAK UP, SONNY! 
-Testing errors for ./week2/ch08/array_sort.rb 
-No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
-No exceptions found.Testing errors for ./week2/ch08/array_sort.rb 
-No exceptions found.zanedamico - Errors encountered while tesitng the meethod: 
+nazgus - Errors encountered while tesitng the meethod: 
+
+
+nazgus - Errors encountered while tesitng the meethod: 
+
+
+nazgus - Errors encountered while tesitng the meethod: 
+
+
+nazgus - Errors encountered while tesitng the meethod: 
 
 
