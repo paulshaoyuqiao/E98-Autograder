@@ -4,18 +4,19 @@
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Jan 5th, 2019 - 11:55PM EST - Rev I
+## Most Recent Update on Jan 9th, 2019 - 9:25PM EST - Rev J
 * **IMPORTANT**: Please check in the Newest Changes section for a change in the grading scheme provided by the autograder!
 * Updated with tests for assignments from **week2**; updated **parameters** for `chapters` and `files`, see **Newest Changes**.
 * Updated `test_match` method in the `Interactive` class to handle trailing spaces in the user output.
 
 Newest Changes:
+* Week 3 Tests have been added.
 * The autograder has been **redesigned** in terms of the following in grading schemes:
   * Instead of seeking a full match, a range of *tolerable* **Edit Distance Score** will be given for full credits to allow for nuances.
   * The total score for one particular method will be now provided on a **floating point number scale** to ensure accurate reflection of the students' performance on each individual subtest.
 * For this week, to save some time on running the autograder, please copy and paste the values below for the parameters `chapters` and `files`:
-  * `chapters = ['ch07', 'ch08']`
-  * `files = ['99_bob.rb', 'deaf_grandma.rb', 'deaf_grandma_extended.rb', 'leap_year_counter.rb', 'array_sort.rb', 'table_of_contents.rb']`
+  * `chapters = ['ch09']`
+  * `files = ['ask.rb', 'new_roman_numerals.rb', 'old_roman_numerals.rb']`
 * IMPORTANT: Now when calling the main method `fetch_from_github`, an additional parameter is specified: `repo_names`. This parameter serves to specify the name of the repository the student is using for the assignment (in particular if the student is not using the default repo name). Please see the **updated Primary Procedures** for more guidelines.
 
 ### Usages:
