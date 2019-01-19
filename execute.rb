@@ -5,7 +5,13 @@
 #AUTHOR: Paul Shao
 
 class Exec
-  @@test_method = [['ask1', 'ask2'], ['old_roman0', 'old_roman1', 'old_roman2', 'old_roman3', 'old_roman4'], ['new_roman0', 'new_roman10', 'new_roman1', 'new_roman2', 'new_roman3', 'new_roman4', 'new_roman5']]
+  @@test_method = [
+      ['arr_max1', 'arr_max2', 'arr_max3', 'arr_max4'],
+      ['contains_char1', 'contains_char2', 'contains_char3', 'contains_char4', 'contains_char5'],
+      ['count_arr1', 'count_arr2', 'count_arr3', 'count_arr4'],
+      ['factorial1', 'factorial2', 'factorial3', 'factorial4'],
+      ['sum_of_digits1', 'sum_of_digits2', 'sum_of_digits3', 'sum_of_digits4']
+  ]
   def self.run_all_test
     i = 0
     while i < @@test_method.length
@@ -15,7 +21,7 @@ class Exec
       j = 0
       while j < @@test_method[i].length
         method = @@test_method[i][j]
-        test_output = `ruby week3_test.rb -n #{'test_' + method} --runner console --verbose=progress`
+        test_output = `ruby week4_test.rb -n #{'test_' + method} --runner console --verbose=progress`
         failed_tests += test_output.chomp.split('').count('F')
         passed_tests += test_output.chomp.split('').count('.')
         j += 1
