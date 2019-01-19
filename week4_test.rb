@@ -27,19 +27,19 @@ class Week4Test < Test::Unit::TestCase
   end
 
   def test_contains_char2
-    assert_false(contains_char('a',''))
+    assert_false(contains_char('','a'))
   end
 
   def test_contains_char3
-    assert_true(contains_char('o', 'sterio'))
+    assert_true(contains_char('sterio', 'o'))
   end
 
   def test_contains_char4
-    assert_true(contains_char('u', 'paiyuyiap'))
+    assert_true(contains_char('paiyuyiap', 'u'))
   end
 
   def test_contains_char5
-    assert_false(contains_char(' ', 'mitochondria'))
+    assert_false(contains_char('mitochondria', ' '))
   end
 
   def test_count_arr1
