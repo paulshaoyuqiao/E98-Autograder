@@ -1,11 +1,11 @@
-# E98-autograder
+# E98-autograder (No Longer In Use; For the Redesigned/Integrated version, see E98 Course Website Repository)
 
 #### **Author** : Paul Shao
 ______________________________________________________________________________________________________________________________
 <span style="color:red"> To begin using, please read **Usages** and **Primary Procedures** first. </span>
 ______________________________________________________________________________________________________________________________
-## Most Recent Update on Jan 18th, 2019 - 8:42PM PST - Rev K
-* **IMPORTANT**: Please refer to the Newest Changes section for a change in the grading scheme provided by the autograder (updated since last week)!
+## Most Recent Update on Jan 18th, 2019 - 8:42PM PST - Rev l
+* **IMPORTANT**: This version of autograder has been deprecated. For most updated/new references to the redesigned autograder, please refer to the `Autograder` folder within the `E98 Course Website` repository
 * Updated with tests for assignments from **week4**; updated **parameters** for `chapters` and `files`, see **Newest Changes**.
 
 Newest Changes:
